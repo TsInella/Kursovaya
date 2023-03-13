@@ -26,7 +26,6 @@ export default class Sidebar extends Component{
                         <NavLink href="/rec"> Reccomended </NavLink>
                         <NavLink href="/prof"> Profile </NavLink>
                     </Nav>
-                    <div width = "600">
                     <Form inline class="m-auto">
                         <FormControl
                             type="text"
@@ -34,7 +33,6 @@ export default class Sidebar extends Component{
                         />
                   </Form>
                     <Button variant="outline-secondary" class="m-auto">Search</Button>
-                    </div>
                     </Navbar.Collapse>
                 </Container>
                </Navbar>
