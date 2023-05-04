@@ -1,7 +1,7 @@
 const sequelize = require('../db')
 const {DataTypes} = require('sequelize')
 
-const User = sequelize.define('user', {
+const Users = sequelize.define('users', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     email: {type: DataTypes.STRING, unique: true},
     password: {type: DataTypes.STRING}
@@ -12,33 +12,32 @@ const Recommendations = sequelize.define('recommendations', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true}
 })
 
-const Movie = sequelize.define('movie', {
+const Movies = sequelize.define('movies', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     name: {type: DataTypes.STRING, allowNull: false},
     description: {type: DataTypes.TEXT, allowNull: false},
-    image: {type: DataTypes.STRING, allowNull: false},
-    name: {type: DataTypes.STRING, allowNull: false},
-    link: {type: DataTypes.TEXT, allowNull: false},
+    img: {type: DataTypes.STRING, allowNull: false},
+    somelink: {type: DataTypes.STRING, allowNull: false},
     year: {type: DataTypes.INTEGER, allowNull: false}
 })
-const Favourite = sequelize.define('favourite', {
+const Favourites = sequelize.define('favourites', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true}
 })
 
-const Genre = sequelize.define('genre', {
+const Genres = sequelize.define('genres', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     name: {type: DataTypes.STRING, allowNull: false}
 })
 
-const Country = sequelize.define('country', {
+const Countries = sequelize.define('countries', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     name: {type: DataTypes.STRING, allowNull: false}
 })
-const Period = sequelize.define('period', {
+const Periods = sequelize.define('periods', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     dates: {type: DataTypes.STRING, allowNull: false}
 })
-const Director = sequelize.define('director', {
+const Directors = sequelize.define('directors', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     name: {type: DataTypes.STRING, allowNull: false}
 })
@@ -48,33 +47,33 @@ const Info = sequelize.define('info', {
     name: {type: DataTypes.STRING, allowNull: false},
     description: {type: DataTypes.TEXT, allowNull: false}
 })
-User.hasOne(Favourite)
-Favourite.belongsTo(User)
+Users.hasOne(Favourites)
+Favourites.belongsTo(Users)
 
-User.hasOne(Recommendations)
-Recommendations.belongsTo(User)
+Users.hasOne(Recommendations)
+Recommendations.belongsTo(Users)
 
-Recommendations.hasMany(Movie)
-Movie.belongsTo(Recommendations)
+Recommendations.hasMany(Movies)
+Movies.belongsTo(Recommendations)
 
-Favourite.hasMany(Movie)
-Movie.belongsTo(Favourite)
+Favourites.hasMany(Movies)
+Movies.belongsTo(Favourites)
 
-Movie.hasMany(Info)
-Info.belongsTo(Movie)
+Movies.hasMany(Info)
+Info.belongsTo(Movies)
 
-Movie.hasOne(Genre)
-Genre.belongsTo(Movie)
+Movies.hasOne(Genres)
+Genres.belongsTo(Movies)
 
-Movie.hasOne(Country)
-Country.belongsTo(Movie)
+Movies.hasOne(Countries)
+Countries.belongsTo(Movies)
 
-Movie.hasOne(Period)
-Period.belongsTo(Movie)
+Movies.hasOne(Periods)
+Periods.belongsTo(Movies)
 
-Movie.hasOne(Director)
-Director.belongsTo(Movie)
+Movies.hasOne(Directors)
+Directors.belongsTo(Movies)
 
 module.exports = {
-    User, Country, Genre, Director, Favourite, Period, Info, Recommendations, Movie
+    Users, Countries, Genres, Directors, Favourites, Periods, Info, Recommendations, Movies
 }
