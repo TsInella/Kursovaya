@@ -3,7 +3,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "sequelize": "^6.29.3"
+    "sequelize": "^6.31.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.21"

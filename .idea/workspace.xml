@@ -5,16 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f311b721-25ec-4780-bb2f-fc1819acb0d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/models/models.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/countriesController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/directorsController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/genresController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/moviesController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/periodsController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/userController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/error/ApiError.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/middleware/errorHandlingMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/countriesRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/directorsRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/genresRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/moviesRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/periodsRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/usersRouter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/abstract/connection-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/abstract/connection-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/abstract/connection-manager.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/abstract/connection-manager.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/abstract/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/abstract/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/abstract/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/abstract/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/abstract/query-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/abstract/query-generator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/abstract/query-generator.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/abstract/query-generator.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/db2/query.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/db2/query.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/db2/query.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/db2/query.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/postgres/connection-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/postgres/connection-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/postgres/connection-manager.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/postgres/connection-manager.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/postgres/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/postgres/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/postgres/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/postgres/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/sqlite/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/sqlite/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/sqlite/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/dialects/sqlite/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/hooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/hooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/hooks.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/hooks.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/lib/model.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/lib/model.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/types/dialects/abstract/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/types/dialects/abstract/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/types/hooks.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/types/hooks.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/types/model.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/types/model.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sequelize/types/sequelize.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sequelize/types/sequelize.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/diagnostics_channel.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/diagnostics_channel.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/process.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/process.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/ts4.8/diagnostics_channel.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/ts4.8/diagnostics_channel.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/ts4.8/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/ts4.8/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/ts4.8/process.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/ts4.8/process.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/node_modules/express/lib/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/express/lib/application.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,20 +69,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/py071/kursach&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\GitHub\Kursovaya" />
@@ -64,7 +99,11 @@
       <updated>1678834399799</updated>
       <workItem from="1678834401108" duration="1909000" />
       <workItem from="1678993424124" duration="2442000" />
-      <workItem from="1679311640636" duration="8954000" />
+      <workItem from="1679311640636" duration="12867000" />
+      <workItem from="1681755695501" duration="2900000" />
+      <workItem from="1682533476080" duration="8341000" />
+      <workItem from="1683204791461" duration="3928000" />
+      <workItem from="1683209132383" duration="6888000" />
     </task>
     <servers />
   </component>
