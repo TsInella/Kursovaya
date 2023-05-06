@@ -42,7 +42,7 @@ const Directors = sequelize.define('directors', {
     name: {type: DataTypes.STRING, allowNull: false}
 })
 
-const Info = sequelize.define('info', {
+const MovieInfo = sequelize.define('info', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     name: {type: DataTypes.STRING, allowNull: false},
     description: {type: DataTypes.TEXT, allowNull: false}
@@ -59,8 +59,8 @@ Movies.belongsTo(Recommendations)
 Favourites.hasMany(Movies)
 Movies.belongsTo(Favourites)
 
-Movies.hasMany(Info)
-Info.belongsTo(Movies)
+Movies.hasMany(MovieInfo, {as: 'info'});
+MovieInfo.belongsTo(Movies)
 
 Movies.hasOne(Genres)
 Genres.belongsTo(Movies)
@@ -75,5 +75,5 @@ Movies.hasOne(Directors)
 Directors.belongsTo(Movies)
 
 module.exports = {
-    Users, Countries, Genres, Directors, Favourites, Periods, Info, Recommendations, Movies
+    Users, Countries, Genres, Directors, Favourites, Periods, MovieInfo, Recommendations, Movies
 }

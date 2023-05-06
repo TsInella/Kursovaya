@@ -6,52 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f311b721-25ec-4780-bb2f-fc1819acb0d1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/md5.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/md5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/rng.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/rng.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/sha1.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/sha1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/stringify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v3.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v35.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v35.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v4.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v5.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/v5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/version.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-browser/version.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/stringify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/v1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/v35.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/v35.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/v4.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/v4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/version.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/esm-node/version.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/rng-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/rng-browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/stringify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuid.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidNIL.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidParse.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidStringify.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidValidate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidVersion.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidv1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidv3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidv4.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/umd/uuidv5.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/v1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/v35.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/v35.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/v4.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/v4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/dist/version.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/dist/version.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uuid/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uuid/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/countriesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/countriesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/directorsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/directorsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/genresController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/genresController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/moviesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/moviesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/periodsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/periodsController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/models/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/models.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/moviesRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/moviesRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/static/761012e1-fc74-4a31-aecf-97e2264e0eb2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/static/bb47d4fc-01a8-4237-9964-55449ac0c2ef.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/static/f81b8be0-eb2d-429a-a0f7-7303da7df22d.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,24 +33,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "19.7.0",
-    "javascript.nodejs.core.library.typings.version": "18.16.3",
-    "last_opened_file_path": "C:/Users/py071/kursach",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.nodejs",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;19.7.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.16.3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/py071/kursach&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\GitHub\Kursovaya" />
@@ -109,7 +70,9 @@
       <workItem from="1681755695501" duration="2900000" />
       <workItem from="1682533476080" duration="8341000" />
       <workItem from="1683204791461" duration="3928000" />
-      <workItem from="1683209132383" duration="15364000" />
+      <workItem from="1683209132383" duration="15972000" />
+      <workItem from="1683306241723" duration="1112000" />
+      <workItem from="1683310744620" duration="10105000" />
     </task>
     <servers />
   </component>

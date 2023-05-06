@@ -4,6 +4,6 @@ const moviesController = require('../controllers/moviesController')
 
 router.post('/', moviesController.create)
 router.get('/', moviesController.getAll)
-router.get('/id', moviesController.getOne)
+router.get('/:id', moviesController.getOne)
 
 module.exports = router
