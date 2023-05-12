@@ -14,7 +14,7 @@ export default class MoviesList {
 
         this._genres =[
             {id:1, name:"Ужасы"},
-            {id:2, name:"Комедия"}
+            {id:2, name:"Комедия"},
         ]
         this._periods = [
             {id:1, name:"20 век"},
