@@ -4,13 +4,18 @@ import {Context} from "../index";
 import {ListGroup} from "react-bootstrap";
 
 const GenresBar = observer(() => {
-    const {movie} = useContext(Context)
+    const {movies} = useContext(Context)
     return (
         <ListGroup>
-            {movie.genres.map(genre =>
-            <ListGroup.Item key = {genre.id}>
-                {genre.name}
-            </ListGroup.Item>
+            {movies.genres.map(genres =>
+                <ListGroup.Item
+                    style = {{cursor:'pointer'}}
+                    active={genres.id === movies.selectedGenre.id}
+                    onClick={() => movies.setSelectedGenre(genres)}
+                    key = {genres.id}
+                >
+                    {genres.name}
+                </ListGroup.Item>
             )}
         </ListGroup>
     );

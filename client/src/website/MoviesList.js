@@ -24,8 +24,11 @@ export default class MoviesList {
             {id:1, name:"Убить Билла", description:"Убили Билла", img:'https://i.pinimg.com/originals/14/72/25/1472254e5c903212fef3c89e4c9b8a6d.jpg', year: "2002", link:'https://d.ixfilm.org/4460-ubit-billa-2003.html'},
             {id:2, name:"Пчелка Майя",description:"Жила пчела с жалком", img: 'https://mobimg.b-cdn.net/v3/fetch/83/8330ddb501dc90b18b52c1f496fb951b.jpeg', year:"2015", link:'https://vseseriipodriad.ru/multfilmy/387-pchelka-mayya.html'}
         ]
+        this._selectedGenre = {}
+        this._selectedDirector = {}
         makeAutoObservable(this)
     }
+
 
     setCountries(countries) {
         this._countries = countries
@@ -43,6 +46,14 @@ export default class MoviesList {
         this._user = movies
     }
 
+    setSelectedGenre(genres)
+    {
+        this._selectedGenre = genres
+    }
+    setSelectedDirector(directors)
+    {
+        this._selectedGenre = directors
+    }
 
     get countries() {
         return this._countries
@@ -60,5 +71,11 @@ export default class MoviesList {
     }
     get movies() {
         return this._movies
+    }
+    get selectedGenre() {
+        return this._selectedGenre
+    }
+    get selectedDirector() {
+        return this._selectedDirector
     }
 }
