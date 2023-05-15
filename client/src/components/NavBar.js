@@ -3,7 +3,8 @@ import {Context} from "../index";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import {Button, NavLink} from "react-bootstrap";
+import {Button} from "react-bootstrap";
+import {NavLink} from "react-router-dom";
 import {RECOMMENDATIONS_ROUTE} from "../utils/consts";
 import {observer} from "mobx-react-lite";
 const NavBar = observer(() => {

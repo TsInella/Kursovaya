@@ -3,22 +3,22 @@ import {observer} from "mobx-react-lite";
 import {Context} from "../index";
 import {Row, Card, Form, ListGroup} from "react-bootstrap";
 
-const DirectorsBar = observer(() => {
+const CountriesBar = observer(() => {
     const {movies} = useContext(Context)
     return (
         <ListGroup>
-            {movies.directors.map(directors =>
+            {movies.countries.map(countries =>
                 <ListGroup.Item
                     style = {{cursor:'pointer'}}
-                    active={directors.id === movies.selectedDirector.id}
-                    onClick={() => movies.setSelectedDirector(directors)}
-                    key = {directors.id}
+                    active={countries.id === movies.selectedCountrie.id}
+                    onClick={() => movies.setSelectedCountrie(countries)}
+                    key = {countries.id}
                 >
-                    {directors.name}
+                    {countries.name}
                 </ListGroup.Item>
             )}
         </ListGroup>
     );
 });
 
-export default DirectorsBar;
+export default CountriesBar;

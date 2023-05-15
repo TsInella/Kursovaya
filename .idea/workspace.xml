@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f311b721-25ec-4780-bb2f-fc1819acb0d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/DirectorsBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/CountriesBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/MList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/MovieItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/PeriodsBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/GenresBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/GenresBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/DirectorsBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/DirectorsBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/MoviesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/MoviesPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Recommendations.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Recommendations.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/website/MoviesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/website/MoviesList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +97,7 @@
       <workItem from="1683741533788" duration="5820000" />
       <workItem from="1683748115059" duration="532000" />
       <workItem from="1683891239189" duration="10339000" />
-      <workItem from="1684162857711" duration="4118000" />
+      <workItem from="1684162857711" duration="14754000" />
     </task>
     <servers />
   </component>

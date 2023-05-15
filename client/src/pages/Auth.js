@@ -1,5 +1,6 @@
 import React from 'react';
-import {Button, Card, Container, Form, FormControl, NavLink, Row} from "react-bootstrap";
+import {Button, Card, Container, Form, FormControl, Row} from "react-bootstrap";
+import {NavLink} from "react-router-dom";
 import {LOGIN_ROUTE, REGISTRATION_ROUTE} from "../utils/consts";
 import {useLocation} from "react-router-dom";
 
@@ -40,9 +41,6 @@ const Auth = () => {
                             {isLogin ? 'Войти!' : 'Регистрация'}
                         </Button>
                     </Row>
-
-
-
                 </Form>
 
             </Card>
