@@ -14,3 +14,4 @@ export const check = async () => {
     const response = await $host.post('api/auth/registration', )
     return response
 }
+
