@@ -43,7 +43,13 @@ const Admin = () => {
             >
                 Добавить длительность фильма
             </Button>
-
+            <Button
+                variant={"outline-success"}
+                className="mt-4 p-2"
+                onClick={()=>setMoviesVisible(true)}
+            >
+                Добавить фильм
+            </Button>
             <CreateMovies show ={moviesVisible} onHide = {() => setMoviesVisible(false)}/>
             <CreateCountries show ={countriesVisible} onHide = {() => setCountriesVisible(false)}/>
             <CreateDirectors show ={directorsVisible} onHide = {() => setDirectorsVisible(false)}/>

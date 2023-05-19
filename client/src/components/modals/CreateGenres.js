@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Form, Modal} from "react-bootstrap";
 
-const CreateGenres = (show, onHide) => {
+const CreateGenres = ({show, onHide}) => {
     return (
         <Modal
             show = {show}

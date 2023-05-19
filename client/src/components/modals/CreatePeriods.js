@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Form, Modal} from "react-bootstrap";
 
-const CreatePeriods = (show, onHide) => {
+const CreatePeriods = ({show, onHide}) => {
     return (
         <Modal
             show = {show}

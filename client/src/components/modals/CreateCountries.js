@@ -2,7 +2,7 @@ import React from 'react';
 import {Button, Form, Modal} from "react-bootstrap";
 
 
-const CreateCountries = (show, onHide) => {
+const CreateCountries = ({show, onHide}) => {
     return (
         <Modal
             show = {show}

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Form, Modal} from "react-bootstrap";
 
-const CreateDirectors = (show, onHide) => {
+const CreateDirectors = ({show, onHide}) => {
     return (
         <Modal
             show = {show}

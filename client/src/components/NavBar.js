@@ -10,7 +10,7 @@ import {observer} from "mobx-react-lite";
 import {useNavigate} from "react-router-dom";
 
 const NavBar = observer(() => {
-    const history = useContext(Context)
+    const history = useNavigate()
     const {user} = useContext(Context)
     return (
         <Navbar bg="success" variant="dark">
@@ -20,13 +20,13 @@ const NavBar = observer(() => {
                 <Nav className="ms-auto" style = {{color:'white'}}>
                     <Button
                         variant={"outline-light"}
-                        onClick={() => history.push(ADMIN_ROUTE)}
+                        onClick={() => history(ADMIN_ROUTE)}
                     >
                         Я админ
                     </Button>
                     <Button
                         variant={"outline-light"}
-                        onClick={() => history.push(LOGIN_ROUTE)}
+                        onClick={() => history(LOGIN_ROUTE)}
                         className="ms-2"
                     >
                         Выйти

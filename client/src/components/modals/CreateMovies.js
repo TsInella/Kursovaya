@@ -3,7 +3,7 @@ import {Button, Col, Dropdown, Form, FormControl, Modal, Row} from "react-bootst
 import {Context} from "../../index";
 import DropdownMenu from "react-bootstrap/DropdownMenu";
 
-const CreateMovies = (show, onHide) => {
+const CreateMovies = ({show, onHide}) => {
     const {movies} = useContext(Context)
     const [info, setInfo] = useState([])
     const addInfo = () =>{
