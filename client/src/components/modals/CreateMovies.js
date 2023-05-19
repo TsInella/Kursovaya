@@ -75,15 +75,12 @@ const CreateMovies = ({show, onHide}) => {
                         variant="outline-success"
                         onClick={addInfo}
                     >
-                        Добавить ?описание
+                        Добавить описание
                     </Button>
                     {info.map(i =>
                             <Row className="mt-4" key = {i.number}> //???
-                                <Col md={4}>
-                                    <FormControl
-                                        placeholder="Введите название аЭЭЭЭЭЭ?"
-                                    />
-                                </Col>
+
+
                                 <Col md={4}>
                                     <FormControl
                                         placeholder="Введите описание"

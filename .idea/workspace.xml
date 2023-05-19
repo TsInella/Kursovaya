@@ -6,14 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f311b721-25ec-4780-bb2f-fc1819acb0d1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/modals/CreateCountries.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/CreateCountries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/modals/CreateDirectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/CreateDirectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/modals/CreateGenres.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/CreateGenres.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/modals/CreateMovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/CreateMovies.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/modals/CreatePeriods.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/CreatePeriods.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/react-router-dom/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react-router-dom/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +92,7 @@
       <workItem from="1683891239189" duration="10339000" />
       <workItem from="1684162857711" duration="19937000" />
       <workItem from="1684344914804" duration="10612000" />
+      <workItem from="1684496634082" duration="692000" />
     </task>
     <servers />
   </component>
