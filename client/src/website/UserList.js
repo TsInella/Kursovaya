@@ -2,22 +2,22 @@ import {makeAutoObservable} from "mobx";
 
 export default class UserList {
     constructor() {
-        this._isAuth = false
-        this._users = {}
+        this._isAuth = true
+        this._user = {}
         makeAutoObservable(this)
     }
 
     setIsAuth(bool) {
         this._isAuth = bool
     }
-    setUser(users) {
-        this._users = users
+    setUser(user) {
+        this._user = user
     }
 
     get isAuth() {
         return this._isAuth
     }
-    get users() {
-        return this._users
+    get user() {
+        return this._user
     }
 }

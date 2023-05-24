@@ -1,28 +1,36 @@
 import React, {useContext, useState} from 'react';
 import {Button, Card, Container, Form, FormControl, Row} from "react-bootstrap";
-import {NavLink} from "react-router-dom";
-import {LOGIN_ROUTE, REGISTRATION_ROUTE} from "../utils/consts";
+import {NavLink, useNavigate} from "react-router-dom";
+import {LOGIN_ROUTE, REGISTRATION_ROUTE, RECOMMENDATIONS_ROUTE} from "../utils/consts";
 import {useLocation} from "react-router-dom";
 import {observer} from "mobx-react-lite";
 import {login, registration} from "../http/userAPI";
 import {Context} from "../index";
 
+
 const Auth = observer(() => {
-    const {users} = useContext(Context)
+    const {user} = useContext(Context)
     const location = useLocation()
+    const history = useNavigate()
     const isLogin = location.pathname === LOGIN_ROUTE;
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
     const click = async () => {
-        let data;
-        if (isLogin) {
-            data = await login(email, password);
-        } else {
-            data = await registration(email, password);
+        try {let data;
+            if (isLogin) {
+                data = await login(email, password);
+            } else {
+                data = await registration(email, password);
+            }
+            user.setUser(user)
+            user.setIsAuth(true)
+            history(RECOMMENDATIONS_ROUTE)
         }
-        users.setUser(data)
-        users.setIsAuth(true)
+        catch (e) {
+            alert(e.response.data.message)
+        }
+
     }
     return (
         <Container

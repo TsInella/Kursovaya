@@ -12,6 +12,11 @@ import {useNavigate} from "react-router-dom";
 const NavBar = observer(() => {
     const history = useNavigate()
     const {user} = useContext(Context)
+
+    const logOut = () => {
+        user.setUser({})
+        user.setIsAuth(false)
+    }
     return (
         <Navbar bg="success" variant="dark">
             <Container>
@@ -26,7 +31,7 @@ const NavBar = observer(() => {
                     </Button>
                     <Button
                         variant={"outline-light"}
-                        onClick={() => history(LOGIN_ROUTE)}
+                        onClick={() => logOut()}
                         className="ms-2"
                     >
                         Выйти
@@ -34,7 +39,7 @@ const NavBar = observer(() => {
                 </Nav>
                 :
                 <Nav className="ms-auto" style = {{color:'white'}}>
-                    <Button variant={"outline-light"} onClick={()=>user.setIsAuth(true)}>Авторизация</Button>
+                    <Button variant={"outline-light"} onClick={()=>history(LOGIN_ROUTE)}>Авторизация</Button>
                 </Nav>
             }
             </Container>
