@@ -1,23 +1,28 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import {Button, Card, Container, Form, FormControl, Row} from "react-bootstrap";
 import {NavLink} from "react-router-dom";
 import {LOGIN_ROUTE, REGISTRATION_ROUTE} from "../utils/consts";
 import {useLocation} from "react-router-dom";
+import {observer} from "mobx-react-lite";
 import {login, registration} from "../http/userAPI";
+import {Context} from "../index";
 
-const Auth = () => {
+const Auth = observer(() => {
+    const {users} = useContext(Context)
     const location = useLocation()
     const isLogin = location.pathname === LOGIN_ROUTE;
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
     const click = async () => {
+        let data;
         if (isLogin) {
-            const response = await login();
+            data = await login(email, password);
         } else {
-            const response = await registration(email, password);
-            console.log(response)
+            data = await registration(email, password);
         }
+        users.setUser(data)
+        users.setIsAuth(true)
     }
     return (
         <Container
@@ -52,7 +57,7 @@ const Auth = () => {
                         }
                         <Button
                             className="mt-4"
-                            style={{width:100}} //вернемся!
+                            style={{width:400}} //вернемся!
                             variant={"outline-success"}
                             onClick={click}
                         >
@@ -64,6 +69,6 @@ const Auth = () => {
             </Card>
         </Container>
     );
-};
+});
 
 export default Auth;
