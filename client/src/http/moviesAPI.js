@@ -25,4 +25,42 @@ export const fetchDirectors   = async () => {
 }
 
 
+//genres
+export const createGenres   = async (genres) => {
+    const {data} = await $authHost.post('api/genres', genres)
+    return data
+}
+
+export const fetchGenres   = async () => {
+    const {data} = await $host.get('api/genres')
+    return data
+}
+
+
+//periods
+export const createPeriods = async (periods) => {
+    const {data} = await $authHost.post('api/periods', periods)
+    return data
+}
+export const fetchPeriods = async () => {
+    const {data} = await $host.get('api/periods')
+    return data
+}
+
+//movies
+export const createMovies = async (movies) => {
+    const {data} = await $authHost.post('api/movies', movies)
+    return data
+}
+export const fetchMovies = async () => {
+    const {data} = await $host.get('api/movies')
+    return data
+}
+
+export const fetchOneMovie = async (id) => {
+    const {data} = await $host.get('api/movies' + id)
+    return data
+}
+
+
 
