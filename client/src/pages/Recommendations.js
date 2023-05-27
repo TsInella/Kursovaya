@@ -1,12 +1,20 @@
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
 import {Col, Container, Row} from "react-bootstrap";
 import GenresBar from "../components/GenresBar";
 import DirectorsBar from "../components/DirectorsBar";
 import CountriesBar from "../components/CountriesBar";
 import PeriodsBar from "../components/PeriodsBar";
 import MList from "../components/MList";
+import {observer} from "mobx-react-lite";
+import {Context} from "../index";
+import {fetchCountries} from "../http/moviesAPI";
 
-const Recommendations = () => {
+const Recommendations = observer(() => {
+    const {movies} = useContext(Context)
+    useEffect(()=>{
+        fetchCountries().then(data => movies.setCountries(data))
+    }, [])
+
     return (
         <Container >
             <Row className = "mt-2">
@@ -31,6 +39,6 @@ const Recommendations = () => {
             </Row>
         </Container>
     );
-};
+});
 
 export default Recommendations;
