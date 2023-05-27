@@ -7,12 +7,14 @@ import PeriodsBar from "../components/PeriodsBar";
 import MList from "../components/MList";
 import {observer} from "mobx-react-lite";
 import {Context} from "../index";
-import {fetchCountries} from "../http/moviesAPI";
+import {fetchCountries, fetchDirectors} from "../http/moviesAPI";
 
 const Recommendations = observer(() => {
     const {movies} = useContext(Context)
     useEffect(()=>{
         fetchCountries().then(data => movies.setCountries(data))
+        fetchDirectors().then(data => movies.setDirectors(data))
+
     }, [])
 
     return (

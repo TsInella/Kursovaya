@@ -3,12 +3,12 @@ import {makeAutoObservable} from "mobx";
 export default class MoviesList {
     constructor() {
         this._countries = [
-            {id: 1, name: "Россия"},
-            {id: 2, name: "Америка"}
+          //  {id: 1, name: "Россия"},
+         //   {id: 2, name: "Америка"}
         ]
         this._directors = [
-            {id:1, name:"Тарантино"},
-            {id:2, name:"Юдашкин"}
+           // {id:1, name:"Тарантино"},
+           // {id:2, name:"Юдашкин"}
         ]
         this._genres = [
             {id:1, name:'Ужасы'},

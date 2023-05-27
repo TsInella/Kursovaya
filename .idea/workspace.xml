@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f311b721-25ec-4780-bb2f-fc1819acb0d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/http/moviesAPI.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/http/moviesAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/http/moviesAPI.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Recommendations.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Recommendations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/website/MoviesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/website/MoviesList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/directorsRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/directorsRouter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
