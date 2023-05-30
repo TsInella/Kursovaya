@@ -6,7 +6,7 @@ import {createPeriods} from "../../http/moviesAPI";
 const CreatePeriods = ({show, onHide}) => {
     const [value, setValue] = useState( '')
     const addPeriods = () => {
-        createPeriods( {name: value}).then(data => {
+        createPeriods( {dates: value}).then(data => {
             setValue('')
             onHide()
         })
@@ -28,7 +28,7 @@ const CreatePeriods = ({show, onHide}) => {
                     <Form.Control
                         value = {value}
                         onChange = {e => setValue(e.target.value)}
-                        placeholder={"Введите год выпуска фильма"}
+                        placeholder={"Введите промежуток"}
                     />
                 </Form>
             </Modal.Body>

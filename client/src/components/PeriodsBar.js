@@ -14,7 +14,7 @@ const PeriodsBar = observer(() => {
                     onClick={() => movies.setSelectedPeriod(periods)}
                     key = {periods.id}
                 >
-                    {periods.name}
+                    {periods.dates}
                 </ListGroup.Item>
             )}
         </ListGroup>

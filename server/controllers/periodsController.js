@@ -2,8 +2,8 @@ const ApiError = require ('../error/ApiError')
 const {Periods} = require("../models/models");
 class PeriodsController {
     async create(req, res) {
-        const {name} = req.body
-        const periods = await Periods.create({name})
+        const {dates} = req.body
+        const periods = await Periods.create({dates})
         return res.json(periods)
     }
     async getAll(req, res) {
