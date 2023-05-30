@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f311b721-25ec-4780-bb2f-fc1819acb0d1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/Pages.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/MovieItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MovieItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/modals/CreateMovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/CreateMovies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/http/moviesAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/http/moviesAPI.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Recommendations.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Recommendations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/website/MoviesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/website/MoviesList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/website/UserList.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/website/UserList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +106,7 @@
       <workItem from="1685363871415" duration="981000" />
       <workItem from="1685364887042" duration="1529000" />
       <workItem from="1685366465596" duration="960000" />
-      <workItem from="1685367459858" duration="8940000" />
+      <workItem from="1685367459858" duration="17323000" />
     </task>
     <servers />
   </component>
