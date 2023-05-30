@@ -58,7 +58,7 @@ export const fetchMovies = async () => {
 }
 
 export const fetchOneMovie = async (id) => {
-    const {data} = await $host.get('api/movies' + id)
+    const {data} = await $host.get('api/movies/' + id)
     return data
 }
 

@@ -1,20 +1,23 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Button, Card, Col, Container, Image, Row} from "react-bootstrap";
-
+import {useParams} from 'react-router-dom'
+import {fetchOneMovie} from "../http/moviesAPI";
 const MoviesPage = () => {
-    const movies = {id:1, name:"Убить Билла", description:"Убили Билла", img:'https://i.pinimg.com/originals/14/72/25/1472254e5c903212fef3c89e4c9b8a6d.jpg', year: "2002", link:'https://d.ixfilm.org/4460-ubit-billa-2003.html'}
-    const description = [
+    const [movies, setMovies] = useState({info: []})
+    const {id} = useParams()
+    console.log(id)
+    useEffect(() => {
+        fetchOneMovie(id).then(data => setMovies(data))
+    }, [])
 
-
-    ]
-        return (
+    return (
         <div className = "bg-dark" style={{height: 1900}}>
             <Container className ="bg-light" style={{height: 1900, width: 1700}}>
                 <Row>
                     <Col md={1}>
                     </Col>
                     <Col md={3} className={"my-5 align-items-right"}>
-                        <Image width={390} height = {250} src={movies.img}/>
+                        <Image width={390} height = {250} src={process.env.REACT_APP_API_URL + movies.img}/>
                         <h2 className={"my-4 text-success"} style={{width: 400, fontSize: 18 }}>{movies.link}</h2>
                         <h2 style={{fontSize: 15}}>{movies.description}</h2>
                     </Col >

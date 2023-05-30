@@ -41,7 +41,7 @@ const Admin = () => {
                 className="mt-4 p-2"
                 onClick={()=>setPeriodsVisible(true)}
             >
-                Добавить год выпуска
+                Добавить временной промежуток
             </Button>
             <Button
                 variant={"outline-success"}

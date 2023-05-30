@@ -3,7 +3,7 @@ const router = new Router()
 const directorsController = require('../controllers/directorsController')
 const checkRole = require('../middleware/checkRoleMiddleware')
 
-router.post('/', checkRole('ADMIN'), directorsController.create)
+router.post('/', directorsController.create)
 router.get('/', directorsController.getAll)
 
 

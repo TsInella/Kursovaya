@@ -6,8 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="f311b721-25ec-4780-bb2f-fc1819acb0d1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/MovieItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MovieItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/modals/CreateCountries.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/CreateCountries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/modals/CreateDirectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/CreateDirectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/modals/CreateGenres.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/CreateGenres.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/modals/CreatePeriods.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/modals/CreatePeriods.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/http/moviesAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/http/moviesAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Recommendations.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Recommendations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/MoviesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/MoviesPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/website/UserList.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/website/UserList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/checkRoleMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/checkRoleMiddleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/countriesRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/countriesRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/directorsRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/directorsRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/genresRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/genresRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/periodsRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/periodsRouter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +110,11 @@
       <workItem from="1684926314065" duration="4592000" />
       <workItem from="1684931285876" duration="10645000" />
       <workItem from="1684959842652" duration="5331000" />
+      <workItem from="1685324069997" duration="8082000" />
+      <workItem from="1685363871415" duration="981000" />
+      <workItem from="1685364887042" duration="1529000" />
+      <workItem from="1685366465596" duration="960000" />
+      <workItem from="1685367459858" duration="985000" />
     </task>
     <servers />
   </component>

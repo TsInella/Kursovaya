@@ -1,7 +1,16 @@
-import React from 'react';
-import {Button, Form, Modal} from "react-bootstrap";
+import React, {useState} from 'react';
+import {Button, Form} from "react-bootstrap";
+import Modal from "react-bootstrap/Modal";
+import {createPeriods} from "../../http/moviesAPI";
 
 const CreatePeriods = ({show, onHide}) => {
+    const [value, setValue] = useState( '')
+    const addPeriods = () => {
+        createPeriods( {name: value}).then(data => {
+            setValue('')
+            onHide()
+        })
+    }
     return (
         <Modal
             show = {show}
@@ -11,19 +20,21 @@ const CreatePeriods = ({show, onHide}) => {
         >
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                    Добавить год выпуска
+                    Добавить временной промежуток
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <Form>
                     <Form.Control
+                        value = {value}
+                        onChange = {e => setValue(e.target.value)}
                         placeholder={"Введите год выпуска фильма"}
                     />
                 </Form>
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="outline-danger" onClick={onHide}>Закрыть</Button>
-                <Button variant="outline-success" onClick={onHide}>Добавить</Button>
+                <Button variant="outline-success" onClick={addPeriods}>Добавить</Button>
 
             </Modal.Footer>
         </Modal>
