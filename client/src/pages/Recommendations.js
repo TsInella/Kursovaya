@@ -17,8 +17,6 @@ const Recommendations = observer(() => {
         fetchGenres().then(data => movies.setGenres(data))
         fetchPeriods().then(data => movies.setPeriods(data))
         fetchMovies().then((data => movies.setMovies(data.rows)))
-
-
     }, [])
 
     return (
