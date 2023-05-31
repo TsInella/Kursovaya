@@ -30,42 +30,42 @@ class MoviesController {
        }
     }
     async getAll(req, res) {
-        let {countriesId, directorsId, genresId, limit, page} = req.query
+        let {countryId, directorId, genreId, limit, page} = req.query
         page = page || 1
         limit = limit || 9
         let offset = page * limit - limit
         let allMovies;
-        if (!countriesId && !directorsId && !genresId)
+        if (!countryId && !directorId && !genreId)
         {
             allMovies = await Movies.findAndCountAll({limit, offset})
         }
-        if (!countriesId && directorsId && genresId)
+        if (!countryId && directorId && genreId)
         {
-            allMovies = await Movies.findAndCountAll({where: {directorsId, genresId}, limit, offset})
+            allMovies = await Movies.findAndCountAll({where: {directorId, genreId}, limit, offset})
         }
-        if (countriesId && !directorsId && genresId)
+        if (countryId && !directorId && genreId)
         {
-            allMovies = await Movies.findAndCountAll({where: {countriesId, genresId}, limit, offset})
+            allMovies = await Movies.findAndCountAll({where: {countryId, genreId}, limit, offset})
         }
-        if (countriesId && directorsId && !genresId)
+        if (countryId && directorId && !genreId)
         {
-            allMovies = await Movies.findAndCountAll({where: {countriesId, directorsId}, limit, offset})
+            allMovies = await Movies.findAndCountAll({where: {countryId, directorId}, limit, offset})
         }
-        if (countriesId && !directorsId && !genresId)
+        if (countryId && !directorId && !genreId)
         {
-            allMovies = await Movies.findAndCountAll({where: {countriesId}, limit, offset})
+            allMovies = await Movies.findAndCountAll({where: {countryId}, limit, offset})
         }
-        if (!countriesId && directorsId && !genresId)
+        if (!countryId && directorId && !genreId)
         {
-            allMovies = await Movies.findAndCountAll({where: {directorsId}, limit, offset})
+            allMovies = await Movies.findAndCountAll({where: {directorId}, limit, offset})
         }
-        if (!countriesId && !directorsId && genresId)
+        if (!countryId && !directorId && genreId)
         {
-            allMovies = await Movies.findAndCountAll({where: {genresId}, limit, offset})
+            allMovies = await Movies.findAndCountAll({where: {genreId}, limit, offset})
         }
-        if (countriesId && directorsId && genresId)
+        if (countryId && directorId && genreId)
         {
-            allMovies = await Movies.findAndCountAll({where:{countriesId, directorsId, genresId}, limit, offset})
+            allMovies = await Movies.findAndCountAll({where:{countryId, directorId, genreId}, limit, offset})
         }
         return res.json(allMovies)
     }

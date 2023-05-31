@@ -15,9 +15,6 @@ import {observer} from "mobx-react-lite";
 const CreateMovies = observer( ({show, onHide}) => {
     const {movies} = useContext(Context)
     const [name, setName] = useState('')
-    const [genre, setGenre] = useState(null)
-    const [director, setDirector] = useState(null)
-    const [period, setPeriod] = useState(null)
     const [file, setFile] = useState(null)
     const [year, setYear] = useState('')
     const [link, setLink] = useState('')
@@ -28,7 +25,6 @@ const CreateMovies = observer( ({show, onHide}) => {
         fetchDirectors().then(data => movies.setDirectors(data))
         fetchGenres().then(data => movies.setGenres(data))
         fetchPeriods().then(data => movies.setPeriods(data))
-        fetchMovies().then((data => movies.setMovies(data.rows)))
     }, [])
 
 
@@ -40,7 +36,7 @@ const CreateMovies = observer( ({show, onHide}) => {
         const formData = new FormData()
         formData.append('name', name)
         formData.append('genreId', movies.selectedGenre.id)
-        formData.append('countrieId', movies.selectedCountrie.id)
+        formData.append('countryId', movies.selectedCountrie.id)
         formData.append('directorId', movies.selectedDirector.id)
         formData.append('periodId', movies.selectedPeriod.id)
         formData.append('year', year)
@@ -53,7 +49,6 @@ const CreateMovies = observer( ({show, onHide}) => {
         <Modal
             show = {show}
             onHide = {onHide}
-            size="lg"
             centered
         >
             <Modal.Header closeButton>
@@ -68,11 +63,11 @@ const CreateMovies = observer( ({show, onHide}) => {
 
                         <Dropdown.Toggle>{movies.selectedGenre.name || "Выберите жанр"}</Dropdown.Toggle>
                         <DropdownMenu>
-                            {movies.genres.map(genre =>
+                            {movies.genres.map(genres =>
                                 <Dropdown.Item
-                                    onClick={() => movies.setSelectedGenre(genre)}
-                                    key = {genre.id}>
-                                    {genre.name}
+                                    onClick={() => movies.setSelectedGenre(genres)}
+                                    key = {genres.id}>
+                                    {genres.name}
                                 </Dropdown.Item> //где выпадающее меню блин, оно как бы есть, но пустое
                             )}
                         </DropdownMenu>
@@ -80,11 +75,11 @@ const CreateMovies = observer( ({show, onHide}) => {
                     <Dropdown className="mt-2 mb-2">
                         <Dropdown.Toggle>{movies.selectedCountrie.name || "Выберите страну"}</Dropdown.Toggle>
                         <DropdownMenu>
-                            {movies.countries.map(countrie =>
+                            {movies.countries.map(countries =>
                                 <Dropdown.Item
-                                    onClick={() => movies.setSelectedCountrie(countrie)}
-                                    key = {countrie.id}>
-                                    {countrie.name}
+                                    onClick={() => movies.setSelectedCountrie(countries)}
+                                    key = {countries.id}>
+                                    {countries.name}
                                 </Dropdown.Item>
                             )}
                         </DropdownMenu>
@@ -92,11 +87,11 @@ const CreateMovies = observer( ({show, onHide}) => {
                     <Dropdown className="mt-2 mb-2">
                         <Dropdown.Toggle>{movies.selectedDirector.name || "Выберите режиссера"}</Dropdown.Toggle>
                         <DropdownMenu>
-                            {movies.directors.map(director =>
+                            {movies.directors.map(directors =>
                                 <Dropdown.Item
-                                    onClick={() => movies.setSelectedDirector(director)}
-                                    key = {director.id}>
-                                    {director.name}
+                                    onClick={() => movies.setSelectedDirector(directors)}
+                                    key = {directors.id}>
+                                    {directors.name}
                                 </Dropdown.Item>
                             )}
                         </DropdownMenu>
@@ -104,11 +99,11 @@ const CreateMovies = observer( ({show, onHide}) => {
                     <Dropdown  className="mt-2 mb-2" >
                         <Dropdown.Toggle>{movies.selectedPeriod.dates || "Выберите период"}</Dropdown.Toggle>
                         <DropdownMenu>
-                            {movies.periods.map(period =>
+                            {movies.periods.map(periods =>
                                 <Dropdown.Item
-                                    onClick={() => movies.setSelectedPeriod(period)}
-                                    key = {period.id}>
-                                    {period.dates}
+                                    onClick={() => movies.setSelectedPeriod(periods)}
+                                    key = {periods.id}>
+                                    {periods.dates}
                                 </Dropdown.Item>
                             )}
                         </DropdownMenu>

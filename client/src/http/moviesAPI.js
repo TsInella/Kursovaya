@@ -52,8 +52,10 @@ export const createMovies = async (movies) => {
     const {data} = await $authHost.post('api/movies', movies)
     return data
 }
-export const fetchMovies = async () => {
-    const {data} = await $host.get('api/movies')
+export const fetchMovies = async (countryId, directorId, periodId, genreId, page, limit = 5 ) => {
+    const {data} = await $host.get('api/movies', {params: {
+        countryId, directorId, periodId, genreId, page, limit
+    }})
     return data
 }
 

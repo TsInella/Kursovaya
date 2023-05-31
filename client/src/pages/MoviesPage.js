@@ -4,8 +4,9 @@ import {useParams} from 'react-router-dom'
 import {fetchOneMovie} from "../http/moviesAPI";
 const MoviesPage = () => {
     const [movies, setMovies] = useState({info: []})
+    const {directorsId} = useParams()
     const {id} = useParams()
-    console.log(id)
+    console.log(directorsId)
     useEffect(() => {
         fetchOneMovie(id).then(data => setMovies(data))
     }, [])

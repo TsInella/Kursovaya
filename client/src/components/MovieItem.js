@@ -9,9 +9,9 @@ const MovieItem = ({movies}) => {
     return (
         <Col md={3} onClick={() => history(MOVIES_ROUTE + "/" + movies.id)}>
             <Card style={{width: 150, cursor: 'pointer'}} border = {'light'}>
-                <Image width={150} height = {150} src={process.env.REACT_APP_API_URL + movies.img}/>
+                <Image width={150} height = {210} src={process.env.REACT_APP_API_URL + movies.img}/>
                 <div className={"text-black-50 mt-1 d-flex justify-content-between align-items-center"}>
-                    <div>aaaaaaa</div>
+                    <div>{movies.year}</div>
                 </div>
                 <div>
                     {movies.name}

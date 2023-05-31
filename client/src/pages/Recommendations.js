@@ -8,6 +8,7 @@ import MList from "../components/MList";
 import {observer} from "mobx-react-lite";
 import {Context} from "../index";
 import {fetchCountries, fetchDirectors, fetchGenres, fetchMovies, fetchPeriods} from "../http/moviesAPI";
+import Pages from "../components/Pages";
 
 const Recommendations = observer(() => {
     const {movies} = useContext(Context)
@@ -16,9 +17,18 @@ const Recommendations = observer(() => {
         fetchDirectors().then(data => movies.setDirectors(data))
         fetchGenres().then(data => movies.setGenres(data))
         fetchPeriods().then(data => movies.setPeriods(data))
-        fetchMovies().then((data => movies.setMovies(data.rows)))
+        fetchMovies(null, null, null, null, 1, 2).then(data => {
+            movies.setMovies(data.rows)
+            movies.setTotalCount(data.count)
+        })
     }, [])
 
+    useEffect(() => {
+        fetchMovies(movies.selectedCountrie.id, movies.selectedDirector.id, movies.selectedGenre.id, movies.selectedPeriod.id, movies.page, 20).then(data => {
+            movies.setMovies(data.rows)
+            movies.setTotalCount(data.count)
+        })
+    }, [movies.page, movies.selectedCountrie, movies.selectedDirector, movies.selectedGenre, movies.selectedPeriod])
     return (
         <Container >
             <Row className = "mt-2">
@@ -39,6 +49,7 @@ const Recommendations = observer(() => {
                 </Col>
                 <Col md={9}>
                     <MList/>
+                    <Pages/>
                 </Col>
             </Row>
         </Container>

@@ -24,6 +24,10 @@ const Favourites = sequelize.define('favourites', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true}
 })
 
+const FavouritesMovies = sequelize.define('favourites_movies', {
+    id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
+})
+
 const Genres = sequelize.define('genres', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     name: {type: DataTypes.STRING, allowNull: false}
@@ -50,30 +54,31 @@ const MovieInfo = sequelize.define('info', {
 Users.hasOne(Favourites)
 Favourites.belongsTo(Users)
 
+Favourites.hasMany(FavouritesMovies)
+FavouritesMovies.belongsTo(Favourites)
+
 Users.hasOne(Recommendations)
 Recommendations.belongsTo(Users)
 
-Recommendations.hasMany(Movies)
-Movies.belongsTo(Recommendations)
+Countries.hasMany(Movies)
+Movies.belongsTo(Countries)
 
-Favourites.hasMany(Movies)
-Movies.belongsTo(Favourites)
+Periods.hasMany(Movies)
+Movies.belongsTo(Periods)
+
+Genres.hasMany(Movies)
+Movies.belongsTo(Genres)
+
+Directors.hasMany(Movies)
+Movies.belongsTo(Directors)
+
+Movies.hasMany(FavouritesMovies)
+FavouritesMovies.belongsTo(Movies)
+
 
 Movies.hasMany(MovieInfo, {as: 'info'});
 MovieInfo.belongsTo(Movies)
 
-Movies.hasOne(Genres)
-Genres.belongsTo(Movies)
-
-Movies.hasOne(Countries)
-Countries.belongsTo(Movies)
-
-Movies.hasOne(Periods)
-Periods.belongsTo(Movies)
-
-Movies.hasOne(Directors)
-Directors.belongsTo(Movies)
-
 module.exports = {
-    Users, Countries, Genres, Directors, Favourites, Periods, MovieInfo, Recommendations, Movies
+    Users, FavouritesMovies, Countries, Genres, Directors, Favourites, Periods, MovieInfo, Recommendations, Movies
 }
