@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {Button} from "react-bootstrap";
 import {NavLink} from "react-router-dom";
-import {ADMIN_ROUTE, LOGIN_ROUTE, RECOMMENDATIONS_ROUTE} from "../utils/consts";
+import {FAVOURITES_ROUTE, ADMIN_ROUTE, LOGIN_ROUTE, RECOMMENDATIONS_ROUTE} from "../utils/consts";
 import {observer} from "mobx-react-lite";
 import {useNavigate} from "react-router-dom";
 
@@ -20,7 +20,7 @@ const NavBar = observer(() => {
     return (
         <Navbar bg="success" variant="dark">
             <Container>
-            <NavLink style = {{fontSize: 30, color:'white'}} className="fw-bold" to  = {RECOMMENDATIONS_ROUTE}>Гавно</NavLink>
+            <NavLink style = {{fontSize: 30, color:'white'}} className="fw-bold" to = {RECOMMENDATIONS_ROUTE}>Гавно</NavLink>
             {user.isAuth ?
                 <Nav className="ms-auto" style = {{color:'white'}}>
                     <Button
@@ -28,6 +28,13 @@ const NavBar = observer(() => {
                         onClick={() => history(ADMIN_ROUTE)}
                     >
                         Я админ
+                    </Button>
+                    <Button
+                        variant={"outline-light"}
+                        onClick={() => history(FAVOURITES_ROUTE)}
+                        className="ms-2"
+                    >
+                        Любимое
                     </Button>
                     <Button
                         variant={"outline-light"}

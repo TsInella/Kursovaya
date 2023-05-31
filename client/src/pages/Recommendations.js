@@ -32,22 +32,19 @@ const Recommendations = observer(() => {
     return (
         <Container >
             <Row className = "mt-2">
-                <Col md={3}>
+                <Col md={3} className="pt-3">
                     <GenresBar/>
                 </Col>
-                <Col md={3}>
+                <Col md={3} className="pt-3">
                     <DirectorsBar/>
                 </Col>
-                <Col md={3}>
+                <Col md={3} className="pt-3">
                     <CountriesBar/>
                 </Col>
-                <Col md={3}>
+                <Col md={3} className="pt-3" >
                     <PeriodsBar/>
                 </Col>
-                <Col md ={3}>
-
-                </Col>
-                <Col md={9}>
+                <Col md={12} className="p-3">
                     <MList/>
                     <Pages/>
                 </Col>

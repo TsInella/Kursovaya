@@ -59,6 +59,17 @@ export const fetchMovies = async (countryId, directorId, periodId, genreId, page
     return data
 }
 
+export const createFavouriteMovies = async (movies) => {
+    const {data} = await $authHost.post('api/movies', movies)
+    return data
+}
+export const fetchFavouriteMovies = async (countryId, directorId, periodId, genreId, page, limit = 5 ) => {
+    const {data} = await $host.get('api/movies', {params: {
+            countryId, directorId, periodId, genreId, page, limit
+        }})
+    return data
+}
+
 export const fetchOneMovie = async (id) => {
     const {data} = await $host.get('api/movies/' + id)
     return data
