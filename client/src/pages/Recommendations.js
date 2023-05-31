@@ -24,7 +24,7 @@ const Recommendations = observer(() => {
     }, [])
 
     useEffect(() => {
-        fetchMovies(movies.selectedCountrie.id, movies.selectedDirector.id, movies.selectedGenre.id, movies.selectedPeriod.id, movies.page, 20).then(data => {
+        fetchMovies(movies.selectedCountrie.id, movies.selectedDirector.id, movies.selectedGenre.id, movies.selectedPeriod.id, movies.page, 4).then(data => {
             movies.setMovies(data.rows)
             movies.setTotalCount(data.count)
         })
@@ -32,19 +32,19 @@ const Recommendations = observer(() => {
     return (
         <Container >
             <Row className = "mt-2">
-                <Col md={3} className="pt-3">
+                <Col md={3} className="pt-5">
                     <GenresBar/>
                 </Col>
-                <Col md={3} className="pt-3">
+                <Col md={3} className="pt-5">
                     <DirectorsBar/>
                 </Col>
-                <Col md={3} className="pt-3">
+                <Col md={3} className="pt-5">
                     <CountriesBar/>
                 </Col>
-                <Col md={3} className="pt-3" >
+                <Col md={3} className="pt-5" >
                     <PeriodsBar/>
                 </Col>
-                <Col md={12} className="p-3">
+                <Col md={12} className="p-5">
                     <MList/>
                     <Pages/>
                 </Col>

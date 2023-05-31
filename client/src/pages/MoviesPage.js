@@ -1,14 +1,15 @@
 import React, {useEffect, useState} from 'react';
 import {Button, Card, Col, Container, Image, Row} from "react-bootstrap";
-import {useParams} from 'react-router-dom'
+import {useNavigate, useParams} from 'react-router-dom'
 import {fetchOneMovie} from "../http/moviesAPI";
-import {LOGIN_ROUTE} from "../utils/consts";
+import {FAVOURITES_ROUTE, LOGIN_ROUTE} from "../utils/consts";
 import {observer} from "mobx-react-lite";
 import {Context} from "../index";
 const MoviesPage = () => {
     const [movies, setMovies] = useState({info: []})
     const [genres, setGenres] = useState({info: []})
     const {id} = useParams()
+    const history = useNavigate()
     useEffect(() => {
         fetchOneMovie(id).then(data => setMovies(data))
     }, [])
@@ -20,14 +21,13 @@ const MoviesPage = () => {
                 <Row>
                     <Col md={1}>
                     </Col>
-                    <Col md={3} className={"my-5 align-items-right"}>
+                    <Col md={5} className={"my-5 align-items-right"}>
                         <Image width={390} height = {560} src={process.env.REACT_APP_API_URL + movies.img}/>
-                        <h2 className={"pt-3"} style={{fontSize: 15}}>{movies.description}</h2>
-                        <h2 style={{fontSize: 15}}>{movies.somelink}</h2>
+                        <h2 className={"pt-5 width: 700"} style={{fontSize: 15}}>{movies.description}</h2>
+                        <h2 style={{fontSize: 15}} className={"text-success"}>{movies.somelink}</h2>
                     </Col >
-                    <Col md={1}>
-                    </Col>
-                    <Col md={4} className={"my-5"}>
+
+                    <Col md={3} className={"my-5"}>
                         <Row className={"d-flex flex-column align-items-center"}>
                             <h2 className={"text-black"}>{movies.name}</h2>
                             <h4 className={"text-black-50"}>{movies.year}</h4>
@@ -36,7 +36,7 @@ const MoviesPage = () => {
                     <Col md={3} className={"my-5"}>
                         <Card style={{width: 200}} className={"d-flex flex-column align-items-right justify-content-around"}
                         >
-                            <Button variant={"outline-dark"}>Добавить в избранное</Button>
+                            <Button variant={"outline-dark"} onClick={() => history(FAVOURITES_ROUTE)}>Добавить в избранное</Button>
                         </Card>
                     </Col>
                 </Row>

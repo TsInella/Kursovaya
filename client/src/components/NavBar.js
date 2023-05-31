@@ -20,7 +20,7 @@ const NavBar = observer(() => {
     return (
         <Navbar bg="success" variant="dark">
             <Container>
-            <NavLink style = {{fontSize: 30, color:'white'}} className="fw-bold" to = {RECOMMENDATIONS_ROUTE}>Гавно</NavLink>
+            <NavLink style = {{fontSize: 30, color:'white'}} className="fw-bold" to = {RECOMMENDATIONS_ROUTE}>Кино</NavLink>
             {user.isAuth ?
                 <Nav className="ms-auto" style = {{color:'white'}}>
                     <Button
